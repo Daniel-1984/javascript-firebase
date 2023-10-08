@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .recibo {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 50px auto;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header, .detalhes-venda, .itens-venda, footer {
+            padding: 10px;
+            border-bottom: 1px dashed black;
+        }
+
+        header h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        address {
+            text-align: center;
+            font-style: normal;
+        }
+
+        .data-hora, .tel {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .itens-venda table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .itens-venda th, .itens-venda td {
+            padding: 5px;
+            border: 1px solid black;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="recibo">
+        <header>
+            <h1>SUPERMERCADO FREITAS</h1>
+            <address>
+                RUA AFONSO PENA 1500 - BELO HORIZONTE - MG - 30512-650
+                <br>
+                CNPJ: 15.000.000/0001-55
+                <br>
+                IE: 0151212151
+            </address>
+            <div class="data-hora">04/07/2019 - 16:55:41</div>
+            <div class="tel">Tel: (31)95727-5084</div>
+        </header>
+
+        <section class="detalhes-venda">
+            <div>Código da Venda: 49</div>
+            <div>Valor Total da Compra: R$ 20,00</div>
+            <div>Desconto: R$ 1,00</div>
+            <div>Valor Total Pago: R$ 20,00</div>
+            <div>Troco: R$ 0,00</div>
+        </section>
+
+        <section class="itens-venda">
+            <h2>ITENS DA VENDA</h2>
+            <table>
+                <tr>
+                    <th>Produto</th>
+                    <th>Valor Unitário</th>
+                    <th>Quantidade</th>
+                    <th>Valor Total</th>
+                </tr>
+                <tr>
+                    <td>Cerveja Lata</td>
+                    <td>R$5.00</td>
+                    <td>1</td>
+                    <td>R$5.00</td>
+                </tr>
+                <tr>
+                    <td>Cerveja Lata</td>
+                    <td>R$5.00</td>
+                    <td>3</td>
+                    <td>R$15.00</td>
+                </tr>
+                <tr>
+                    <td>Suco Natural</td>
+                    <td>R$8.00</td>
+                    <td>1</td>
+                    <td>R$8.00</td>
+                </tr>
+            </table>
+        </section>
+
+        <footer>
+            DESENVOLVIDO POR HUGO VASCONCELOS - Q-CURSOS NETWORKS
+        </footer>
+    </div>
+</body>
+</html>
